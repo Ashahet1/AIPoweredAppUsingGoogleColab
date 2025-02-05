@@ -1,1 +1,82 @@
+📚 Semantic Book Recommender
+📖 Overview
+The Semantic Book Recommender is a machine learning-powered application that suggests books based on user input. It utilizes natural language processing (NLP) techniques to match books to user queries and ranks them based on emotional tones and categories.
+This project is built using Gradio for a user-friendly web interface, LangChain for semantic search, and ChromaDB for vector-based recommendations.
+
+🚀 Features
+🔍 Semantic Search: Retrieves books based on natural language descriptions.
+🎭 Emotion-Based Filtering: Allows users to filter recommendations based on emotional tones (e.g., Happy, Sad, Suspenseful, etc.).
+📚 Category-Based Filtering: Users can refine searches based on book genres.
+🖼️ Thumbnail Support: Displays book covers alongside recommendations.
+💻 Web Interface: Built with Gradio for an interactive experience.
+
+🛠️ Technologies Used
+Programming Language
+🐍 Python 3.12
+Libraries & Frameworks
+NLP & Machine Learning:
+🤖 LangChain – For handling document processing and embedding retrieval.
+🧠 OpenAIEmbeddings – For semantic similarity search.
+🔍 ChromaDB – For storing and retrieving vector embeddings.
+Data Processing:
+📊 Pandas – For managing book datasets.
+🔢 NumPy – For efficient numerical operations.
+Visualization & UI:
+🎨 Gradio – For the interactive user interface.
+📈 Matplotlib & Seaborn – For data visualization.
+Deep Learning Frameworks:
+🔥 TensorFlow & Keras – Used for integrating with pre-trained NLP models.
+🤖 Transformers – For zero-shot classification with facebook/bart-large-mnli.
+
+📥 Installation Guide
+Clone the Repository:
+
+ git clone https://github.com/your-username/semantic-book-recommender.git
+cd semantic-book-recommender
+
+
+Create a Virtual Environment:
+
+ python -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+.venv\Scripts\activate    # Windows
+
+
+Install Dependencies:
+
+ pip install -r requirements.txt
+
+
+Set Up Environment Variables: Create a .env file and add API keys if needed.
+
+
+Run the Application:
+
+ python gradio-dashboard.py
+
+
+Access the Web Interface: Open your browser and go to http://127.0.0.1:7860/.
+
+
+
+🎯 Usage
+Enter a book description in the text box.
+Select a category (or leave it as "All").
+Choose an emotional tone to filter recommendations.
+Click "Find Recommendations" to generate results.
+Browse the book thumbnails and descriptions.
+
+🛠️ Troubleshooting
+If you encounter errors, check the Error Fix Report for solutions. Common issues include:
+❌ TensorFlow installation errors: Ensure you're using a compatible Python version.
+❌ Pandas CSV parsing errors: Ensure the dataset is formatted correctly.
+❌ Gradio UI issues: Restart the server and clear browser cache.
+
+🤝 Contributing
+Contributions are welcome! To contribute:
+Fork the repository.
+Create a feature branch (git checkout -b feature-xyz).
+Commit your changes (git commit -m "Added new feature").
+Push the branch (git push origin feature-xyz).
+Open a Pull Request.
 
